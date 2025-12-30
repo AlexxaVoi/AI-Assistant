@@ -1,0 +1,44 @@
+.gradient-background {
+  position: relative;
+}
+.gradient-background::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: radial-gradient(
+      145% 72% at 50% 8%,
+      var(--brand-background-color) 36%,
+      #0b43ba 40%,
+      #49dbff 45%,
+      transparent 50%
+    ),
+    radial-gradient(150% 25% at 50% 41%, #ffffff 65%, rgba(0, 0, 0, 1) 90%);
+}
+
+.gradient-background::after {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: radial-gradient(
+    150% 102% at 50% 86%,
+    var(--brand-background-color) 36%,
+    #0b43ba 40%,
+    #49dbff 45%,
+    transparent 51%
+  );
+}
+
+.gradient-background > * {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,21 @@
+.revenue-source__chart {
+  max-width: 720px;
+  max-height: 200px;
+}
+.grid {
+  stroke: #324b55;
+}
+.chart__line {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart__line--0 {
+  stroke: #00e5d8;
+}
+
+.chart__line--1 {
+  stroke: #ffd166;
+}

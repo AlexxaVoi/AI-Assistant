@@ -1,0 +1,55 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  padding: 30px;
+  gap: 40px;
+
+  background-color: var(--dark-background-card);
+}
+.order__metric {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.order__metric-icon {
+  max-width: 28px;
+  max-height: 24px;
+  padding: 9px;
+  border-radius: 8px;
+  background-color: #151a20;
+}
+
+.order__metric-income {
+  align-self: center;
+  padding: 8px 10px;
+  border-radius: 20px;
+
+  color: var(--dark-background-card);
+  font-family: var(--second-brand-text-style);
+  background-color: var(--green-color);
+}
+
+.order__data {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: var(--second-brand-text-style);
+}
+
+.order__values {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.order__amount {
+  font-size: 35px;
+}
+
+.order__description {
+  color: var(--gray-text-color);
+  max-width: 92px;
+}

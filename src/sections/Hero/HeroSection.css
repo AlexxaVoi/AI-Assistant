@@ -1,0 +1,39 @@
+.hero-section {
+  padding: 200px 0;
+}
+
+.hero__cards {
+  position: relative;
+}
+
+.hero__container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+}
+.hero-title {
+  background: linear-gradient(100deg, #ffffff, #aaaaaa, #000000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  max-width: 1300px;
+}
+
+.hero-description {
+  max-width: 710px;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 55px;
+  justify-content: center;
+}

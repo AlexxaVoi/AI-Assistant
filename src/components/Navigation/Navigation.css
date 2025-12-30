@@ -1,0 +1,13 @@
+.header-nav {
+  border: 1.5px solid #ffffff26;
+  border-radius: 40px;
+  background-color: #ffffff08;
+  padding: 23px 34px;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(11px + 1vw);
+}

@@ -1,0 +1,47 @@
+.earning {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--dark-background-card);
+  border-radius: 30px;
+}
+.earning__data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.earning__icon {
+  max-height: 19px;
+  max-width: 19px;
+  padding: 12px;
+  background-color: #151a20;
+  border-radius: 7px;
+  align-self: flex-end;
+}
+.earning__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  font-family: var(--second-brand-text-style);
+}
+
+.earning__title {
+  font-size: 22px;
+  font-weight: 400;
+}
+.earning__profit {
+  font-size: 35px;
+}
+.earning__income {
+  margin: auto;
+  color: var(--dark-background-card);
+  background-color: var(--yellow-color);
+  border-radius: 58px;
+  padding: 7px 15px;
+}
+
+.earning__graph {
+  padding-top: 30px;
+}

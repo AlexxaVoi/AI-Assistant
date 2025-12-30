@@ -1,0 +1,38 @@
+.toggle-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 12px;
+  font-size: 20px;
+}
+
+.toggle__discount {
+  padding-left: 10px;
+  font-weight: 500;
+  color: var(--gray-text-color);
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.custom-radio {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+input:checked + .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-51%, -51%);
+  border-radius: 50%;
+  background-color: #0055ff;
+  width: 18px;
+  height: 18px;
+}
