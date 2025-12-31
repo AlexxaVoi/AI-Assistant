@@ -16,11 +16,6 @@ const MONTHS = [
   "Dec",
 ];
 
-const DATA = [
-  32000, 45000, 38000, 52000, 61000, 70000, 82000, 79000, 74000, 88000, 96000,
-  105000,
-];
-
 const SVG_NS = "http://www.w3.org/2000/svg";
 
 const CHART_HEIGHT = 275;
@@ -29,7 +24,8 @@ const MAX_VALUE = 50000;
 const Y_STEPS = 5;
 
 const RevenueSourceGraf = ({ arrayGridData }) => {
-  const gridLayoutRef = useRef(null);
+  const gridRef = useRef(null);
+  const chartRef = useRef(null);
 
   // vertical lines + months
   useEffect(() => {
@@ -54,7 +50,7 @@ const RevenueSourceGraf = ({ arrayGridData }) => {
       elements.push(line, month);
     }
 
-    gridLayoutRef.current.append(...elements);
+    gridRef.current.append(...elements);
   }, []);
 
   // values
@@ -78,35 +74,44 @@ const RevenueSourceGraf = ({ arrayGridData }) => {
       elements.push(label);
     }
 
-    gridLayoutRef.current.append(...elements);
+    gridRef.current.append(...elements);
   }, []);
 
   // Line chart
   useEffect(() => {
-    let d = "";
+    const chartGroup = chartRef.current;
+    chartGroup.innerHTML = "";
 
-    for (let i = 0; i < arrayGridData.length; i++) {
+    arrayGridData.forEach((series, seriesIndex) => {
+      const points = series.monthlyMaxProfit.map((value, i) => ({
+        x: i * STEP_X + STEP_X / 2,
+        y: CHART_HEIGHT - (value / MAX_VALUE) * CHART_HEIGHT,
+      }));
+
+      let d = `M ${points[0].x} ${points[0].y}`;
+
+      for (let i = 1; i < points.length; i++) {
+        const prev = points[i - 1];
+        const curr = points[i];
+
+        const cx = (prev.x + curr.x) / 2;
+
+        d += ` C ${cx} ${prev.y}, ${cx} ${curr.y}, ${curr.x} ${curr.y}`;
+      }
+
       const path = document.createElementNS(SVG_NS, "path");
-      const data = arrayGridData[i].monthlyMaxProfit;
-
-      data.forEach((value, i) => {
-        const x = i * STEP_X + STEP_X / 2;
-        const y = CHART_HEIGHT - (value / MAX_VALUE) * CHART_HEIGHT;
-
-        d += i === 0 ? `M ${x} ${y}` : ` L ${x} ${y}`;
-      });
-
       path.setAttribute("d", d);
-      path.classList.add("chart__line");
-      path.classList.add(`chart__line--${i}`);
-      gridLayoutRef.current.append(path);
-    }
-  }, []);
+      path.classList.add("chart__line", `chart__line--${seriesIndex}`);
+
+      chartGroup.append(path);
+    });
+  }, [arrayGridData]);
 
   return (
     <div className="revenue-source__chart">
       <svg viewBox="-50 0 650 300">
-        <g ref={gridLayoutRef} className="grid" strokeWidth="1" />
+        <g ref={gridRef} className="grid" strokeWidth="1" />
+        <g ref={chartRef} className="chart" />
       </svg>
     </div>
   );

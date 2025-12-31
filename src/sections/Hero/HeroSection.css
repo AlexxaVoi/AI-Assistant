@@ -24,16 +24,30 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-
-  max-width: 1300px;
 }
 
 .hero-description {
-  max-width: 710px;
+  max-width: 350px;
 }
 
 .hero__buttons {
   display: flex;
   gap: 55px;
   justify-content: center;
+}
+
+@media (min-width: 481px) {
+  .hero-description {
+    max-width: 450px;
+  }
+}
+@media (min-width: 1025px) {
+  .hero-description {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero-description {
+    max-width: 710px;
+  }
 }
