@@ -34,12 +34,12 @@ const RevenueSourceCard = () => {
           <p className="revenue-source__heading-title">
             {REVENUE_CONTENT.title}
           </p>
+          <RevenueSourceList arrSourceData={REVENUE_GRAF_DATA} />
         </div>
         <img className="revenue-source__icon" src={iconColumb} alt="columb" />
       </div>
 
       <div className="revenue-source__metric">
-        <RevenueSourceList arrSourceData={REVENUE_GRAF_DATA} />
         <RevenueSourceGraf arrayGridData={REVENUE_GRAF_DATA} />
       </div>
     </article>

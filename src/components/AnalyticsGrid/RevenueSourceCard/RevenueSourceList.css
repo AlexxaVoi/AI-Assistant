@@ -1,0 +1,9 @@
+.revenue-source__customer-types {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  font-family: var(--second-brand-text-style);
+  font-weight: 400;
+  color: #ffffff7d;
+}
