@@ -1,0 +1,62 @@
+.pricing-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  font-family: var(--second-brand-text-style);
+  font-weight: 400;
+}
+
+.price__name {
+  color: var(--gray-text-color);
+  font-size: 18px;
+}
+
+.price__row {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+.price__value {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.price__period {
+  padding-bottom: 5px;
+}
+
+.price__description {
+  color: var(--gray-text-color);
+}
+
+/* */
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-family: var(--second-brand-text-style);
+}
+.feature__name {
+  font-size: 20px;
+}
+
+/**/
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.subscription__bill {
+  color: var(--gray-text-color);
+  font-family: var(--second-brand-text-style);
+  font-weight: 500;
+}

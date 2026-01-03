@@ -1,0 +1,35 @@
+.revenue-source__chart {
+  max-width: 720px;
+  max-height: 200px;
+}
+.grid {
+  stroke: #324b55;
+}
+.chart__line {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.grid__month,
+.grid__value {
+  font-family: var(--third-brand-text-style);
+  font-weight: 300;
+  font-size: 12px;
+  fill: #cadfe7;
+  stroke: none;
+}
+
+.chart__line {
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.chart__line--0 {
+  stroke: var(--yellow-color);
+}
+
+.chart__line--1 {
+  stroke: var(--light-blue-color);
+}

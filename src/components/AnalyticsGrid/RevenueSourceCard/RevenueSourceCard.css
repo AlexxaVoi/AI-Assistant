@@ -1,0 +1,36 @@
+.revenue-source {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  padding: 30px;
+  gap: 20px;
+
+  background-color: var(--dark-background-card);
+}
+
+.revenue-source__heading {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.revenue-source__heading-data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.revenue-source__heading-title {
+  font-family: var(--second-brand-text-style);
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.revenue-source__icon {
+  max-width: 19px;
+  max-height: 19px;
+  border-radius: 7px;
+  padding: 12px;
+  background: #151a20;
+}

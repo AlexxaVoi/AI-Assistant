@@ -1,0 +1,38 @@
+.conversion {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  padding: 30px 20px;
+
+  background-color: var(--dark-background-card);
+}
+
+.conversion__data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+  font-family: var(--second-brand-text-style);
+}
+
+.conversion__title {
+  font-size: 26px;
+  font-weight: 700;
+}
+.conversion__description {
+  font-size: 16px;
+  color: #ced8e1;
+  max-width: 450px;
+}
+
+.conversion__metric {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conversion__metric-diagram {
+  margin: auto;
+  max-width: 208px;
+  max-height: 208px;
+}

@@ -1,0 +1,14 @@
+.analytic__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.analytic__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  text-align: center;
+}

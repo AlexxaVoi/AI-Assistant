@@ -1,0 +1,16 @@
+/* .ai-feature-section {
+  padding: 40px 0;
+} */
+.ai-feature__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.ai-feature__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  text-align: center;
+}

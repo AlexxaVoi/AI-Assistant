@@ -1,0 +1,30 @@
+.price__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  position: relative;
+}
+
+.price__container::before {
+  content: "PLANNING";
+  position: absolute;
+  top: 33%;
+  font-size: clamp(40px, 15vw, 200px);
+  font-weight: 600;
+  color: #ffffffc7;
+  filter: blur(6px);
+}
+@media (min-width: 1440px) {
+  .price__container::before {
+    font-size: 200px;
+  }
+}
+.price__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  text-align: center;
+}
