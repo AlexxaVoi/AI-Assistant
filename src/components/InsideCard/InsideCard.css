@@ -15,6 +15,27 @@
   z-index: 1;
 }
 
+/* .insight-card:nth-child(1) {
+  transform: rotate(-8deg);
+  top: -30vh;
+  left: -8vw;
+  z-index: 3;
+}
+
+.insight-card:nth-child(2) {
+  transform: rotate(6.5deg);
+  top: -20vh;
+  left: -4vw;
+  z-index: 1;
+} 
+
+.insight-card:nth-child(3) {
+  transform: rotate(-9deg);
+  top: -9vh;
+  left: -5vw;
+  z-index: 2;
+}
+*/
 .insight-card:nth-child(3) {
   transform: rotate(-9deg);
   top: -75px;

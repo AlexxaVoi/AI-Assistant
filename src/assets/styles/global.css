@@ -15,9 +15,9 @@
   --blue-color: #0b43ba;
   --dark-background-card: #0a0d10;
 
-  --h1-size: 26px;
-  --h2-size: 20px;
-  --h3-size: 14px;
+  --h1-size: clamp(26px, calc(1rem + 5.1vw), 90px);
+  --h2-size: clamp(20px, 4vw, 50px);
+  --h3-size: clamp(14px, 10vw, 20px);
   --p-size: 14px;
 
   --h1-weight: 600;
@@ -30,9 +30,6 @@
 
 @media (min-width: 481px) {
   :root {
-    --h1-size: 36px;
-    --h2-size: 28px;
-
     --h1-max-width: 450px;
     --h2-max-width: 550px;
     --h3-max-width: 550px;
@@ -40,10 +37,6 @@
 }
 @media (min-width: 1025px) {
   :root {
-    --h1-size: 48px;
-    --h2-size: 36px;
-    --h3-size: 16px;
-
     --h1-max-width: 800px;
     --h2-max-width: 700px;
     --h3-max-width: 625px;
@@ -51,10 +44,6 @@
 }
 @media (min-width: 1440px) {
   :root {
-    --h1-size: 90px;
-    --h2-size: 50px;
-    --h3-size: 20px;
-
     --h1-max-width: 1300px;
     --h2-max-width: 850px;
     --h3-max-width: 850px;
