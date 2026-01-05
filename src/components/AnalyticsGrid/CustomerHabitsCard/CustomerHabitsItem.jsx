@@ -1,12 +1,11 @@
 import "./CustomerHabitsItem.css";
 
-const CustomerHabitsItem = ({ text }) => {
+const CustomerHabitsItem = ({ text, color }) => {
   return (
     <li className="habit__customer-type">
       <span
-        className={`habit__indicator habit__indicator--${text
-          .toLowerCase()
-          .replace(/\s+/g, "-")}`}
+        className={`habit__indicator`}
+        style={{ backgroundColor: color }}
       ></span>
       {text}
     </li>

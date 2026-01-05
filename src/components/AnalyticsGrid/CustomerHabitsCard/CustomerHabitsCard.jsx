@@ -44,7 +44,7 @@ const CustomerHabitsCard = () => {
       <div className="habit__head">
         <div className="habit__head-data">
           <p className="habit__head-title">{HABIT_CONTENT.title}</p>
-          <CustomerHabitsList arrSourceData={HABIT_GRAF_DATA} />
+          <CustomerHabitsList arrSourceData={HABIT_GRAF_DATA.datasets} />
         </div>
         <img className="habit__icon" src={iconColumb} alt="columb" />
       </div>

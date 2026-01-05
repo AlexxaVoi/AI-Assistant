@@ -5,10 +5,11 @@ import "./CustomerHabitsList.css";
 const CustomerHabitsList = ({ arrSourceData }) => {
   return (
     <ul className="revenue-source__customer-types">
-      {arrSourceData.datasets.map((dataset) => (
+      {arrSourceData.map((dataset) => (
         <CustomerHabitsItem
           key={dataset.label.toLowerCase().replace(/\s+/g, "")}
           text={dataset.label}
+          color={dataset.backgroundColor}
         />
       ))}
     </ul>
