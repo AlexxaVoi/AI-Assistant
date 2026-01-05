@@ -29,11 +29,9 @@ const REVENUE_GRAF_DATA = [
 const RevenueSourceCard = () => {
   return (
     <article className="revenue-source">
-      <div className="revenue-source__heading">
-        <div className="revenue-source__heading-data">
-          <p className="revenue-source__heading-title">
-            {REVENUE_CONTENT.title}
-          </p>
+      <div className="revenue-source__head">
+        <div className="revenue-source__head-data">
+          <p className="revenue-source__head-title">{REVENUE_CONTENT.title}</p>
           <RevenueSourceList arrSourceData={REVENUE_GRAF_DATA} />
         </div>
         <img className="revenue-source__icon" src={iconColumb} alt="columb" />

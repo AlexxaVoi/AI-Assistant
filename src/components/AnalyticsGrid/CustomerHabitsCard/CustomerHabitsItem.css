@@ -1,0 +1,20 @@
+.habit__customer-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.habit__indicator {
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+
+  margin-right: 5px;
+}
+
+.habit__indicator--seen-products {
+  background-color: var(--dark-blue-color);
+}
+.habit__indicator--sales {
+  background-color: var(--light-blue-color);
+}
