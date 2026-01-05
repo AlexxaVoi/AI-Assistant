@@ -32,11 +32,7 @@ const CustomerHabitsGraf = ({ data }) => {
               stepSize: data.valueLabels.step,
               callback: (value) => `${value / 1000}к`,
               color: "#CADFE7",
-              font: {
-                size: 12,
-                weight: "normal",
-                family: data.fontFamilyLabels,
-              },
+              font: data.fontsLabels,
             },
           },
           x: {
