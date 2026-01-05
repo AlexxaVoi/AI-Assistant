@@ -13,7 +13,8 @@
   --green-color: #70f17a;
   --blue-color: #0b43ba;
   --light-blue-color: #00d5ff;
-  --dark-blue-color: #0b4357;
+  --light-emerald-color: #00c4c9;
+  --dark-emerald-color: #0b4357;
   --dark-background-card: #0a0d10;
 
   --h1-size: clamp(26px, calc(1rem + 5.1vw), 90px);

@@ -13,8 +13,8 @@
 }
 
 .habit__indicator--seen-products {
-  background-color: var(--dark-blue-color);
+  background-color: var(--dark-emerald-color);
 }
 .habit__indicator--sales {
-  background-color: var(--light-blue-color);
+  background-color: var(--light-emerald-color);
 }

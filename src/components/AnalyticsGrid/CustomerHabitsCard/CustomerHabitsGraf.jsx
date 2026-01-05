@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Chart } from "chart.js/auto";
 import "./CustomerHabitsGraf.css";
 
-const CustomerHabitsGraf = () => {
+const CustomerHabitsGraf = ({ data }) => {
   const canvasRef = useRef(null);
   const chartRef = useRef(null);
 
@@ -15,19 +15,37 @@ const CustomerHabitsGraf = () => {
 
     chartRef.current = new Chart(ctx, {
       type: "bar",
-      data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-        datasets: [
-          {
-            label: "# of Votes",
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1,
-          },
-        ],
-      },
+      data: data,
+      maxBarThickness: 30,
       options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
         scales: {
-          y: { beginAtZero: true },
+          y: {
+            min: data.valueLabels.min,
+            max: data.valueLabels.max,
+            ticks: {
+              stepSize: data.valueLabels.step,
+              callback: (value) => `${value / 1000}к`,
+              color: "#CADFE7",
+              font: {
+                size: 12,
+                weight: "normal",
+                family: data.fontFamilyLabels,
+              },
+            },
+          },
+          x: {
+            ticks: {
+              color: "#CADFE7",
+
+              font: data.fontsLabels,
+            },
+          },
         },
       },
     });
@@ -36,9 +54,9 @@ const CustomerHabitsGraf = () => {
       chartRef.current?.destroy();
       chartRef.current = null;
     };
-  }, []);
+  }, [data]);
 
-  return <canvas ref={canvasRef} />;
+  return <canvas ref={canvasRef} className="habit__graf" />;
 };
 
 export default CustomerHabitsGraf;
