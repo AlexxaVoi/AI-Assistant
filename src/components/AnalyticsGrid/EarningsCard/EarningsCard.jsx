@@ -11,7 +11,7 @@ const EARNING_CONTENT = {
 
 const EarningsCard = () => {
   return (
-    <article className="earning">
+    <article className="earning card-1">
       <div className="earning__data">
         <img className="earning__icon" alt="icon column" src={iconColumb} />
 

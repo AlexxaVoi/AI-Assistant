@@ -34,3 +34,13 @@
   padding: 12px;
   background: #151a20;
 }
+
+.revenue-source__metric {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .revenue-source__head-title {
+    font-size: 22px;
+  }
+}

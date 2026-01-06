@@ -12,7 +12,7 @@ const CONVERSION_CONTENT = {
 
 const ConversionCard = () => {
   return (
-    <article className="conversion">
+    <article className="conversion card-4">
       <div className="conversion__data">
         <p className="conversion__title">{CONVERSION_CONTENT.title}</p>
         <p className="conversion__description">

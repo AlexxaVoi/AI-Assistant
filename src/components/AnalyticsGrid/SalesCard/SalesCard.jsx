@@ -11,7 +11,7 @@ const SALES_CONTENT = {
 
 const SalesCard = () => {
   return (
-    <article className="sale">
+    <article className="sale card-2">
       <div className="sale__metric">
         <img
           className="sale__metric-icon"

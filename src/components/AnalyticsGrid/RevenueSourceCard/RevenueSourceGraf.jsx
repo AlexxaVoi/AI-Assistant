@@ -18,6 +18,8 @@ const RevenueSourceGraf = ({ data }) => {
       data: data,
 
       options: {
+        responsive: true,
+        maintainAspectRatio: false,
         plugins: {
           legend: {
             display: false,

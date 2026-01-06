@@ -75,7 +75,7 @@ const REVENUE_GRAF_DATA = {
 
 const RevenueSourceCard = () => {
   return (
-    <article className="revenue-source">
+    <article className="revenue-source card-5">
       <div className="revenue-source__head">
         <div className="revenue-source__head-data">
           <p className="revenue-source__head-title">{REVENUE_CONTENT.title}</p>

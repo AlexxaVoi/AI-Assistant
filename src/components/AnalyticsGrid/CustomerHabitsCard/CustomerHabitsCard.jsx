@@ -40,7 +40,7 @@ const HABIT_GRAF_DATA = {
 
 const CustomerHabitsCard = () => {
   return (
-    <article className="habit">
+    <article className="habit card-6">
       <div className="habit__head">
         <div className="habit__head-data">
           <p className="habit__head-title">{HABIT_CONTENT.title}</p>

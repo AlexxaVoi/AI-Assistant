@@ -11,7 +11,7 @@ const ORDER_CONTENT = {
 
 const OrdersCard = () => {
   return (
-    <article className="order">
+    <article className="order card-3">
       <div className="order__metric">
         <img className="order__metric-icon" src={iconLorry} alt="lorry" />
         <p className="order__metric-income">{ORDER_CONTENT.incom}</p>

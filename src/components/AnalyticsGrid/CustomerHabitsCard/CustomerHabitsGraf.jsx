@@ -19,6 +19,7 @@ const CustomerHabitsGraf = ({ data }) => {
       maxBarThickness: 30,
       options: {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
           legend: {
             display: false,
