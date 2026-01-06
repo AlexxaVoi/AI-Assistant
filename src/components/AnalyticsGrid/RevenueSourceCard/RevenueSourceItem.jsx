@@ -1,12 +1,11 @@
 import "./RevenueSourceItem.css";
 
-const RevenueSourceItem = ({ text }) => {
+const RevenueSourceItem = ({ text, color }) => {
   return (
     <li className="revenue-source__customer-type">
       <span
-        className={`revenue-source__indicator revenue-source__indicator--${text
-          .toLowerCase()
-          .replace(/\s+/g, "-")}`}
+        className={`revenue-source__indicator`}
+        style={{ backgroundColor: color }}
       ></span>
       {text}
     </li>

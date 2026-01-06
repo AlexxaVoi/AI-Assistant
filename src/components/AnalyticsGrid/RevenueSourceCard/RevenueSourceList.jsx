@@ -5,10 +5,11 @@ import "./RevenueSourceList.css";
 const RevenueSourceList = ({ arrSourceData }) => {
   return (
     <ul className="revenue-source__customer-types">
-      {arrSourceData.map((item) => (
+      {arrSourceData.map((dataset) => (
         <RevenueSourceItem
-          key={item.name.toLowerCase().replace(/\s+/g, "")}
-          text={item.name}
+          key={dataset.label.toLowerCase().replace(/\s+/g, "")}
+          text={dataset.label}
+          color={dataset.borderColor}
         />
       ))}
     </ul>
