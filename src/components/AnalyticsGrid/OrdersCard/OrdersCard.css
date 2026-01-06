@@ -53,3 +53,9 @@
   color: var(--gray-text-color);
   max-width: 92px;
 }
+
+@media (max-width: 1024px) {
+  .order__amount {
+    font-size: 30px;
+  }
+}

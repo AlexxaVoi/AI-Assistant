@@ -33,6 +33,17 @@
 
 .conversion__metric-diagram {
   margin: auto;
+  width: 100%;
+  height: 100%;
   max-width: 208px;
   max-height: 208px;
+}
+
+@media (max-width: 1024px) {
+  .conversion__title {
+    font-size: 22px;
+  }
+  .conversion__description {
+    font-size: 14px;
+  }
 }

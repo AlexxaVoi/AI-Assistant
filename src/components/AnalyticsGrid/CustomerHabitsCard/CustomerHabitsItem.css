@@ -11,10 +11,3 @@
 
   margin-right: 5px;
 }
-
-.habit__indicator--seen-products {
-  background-color: var(--dark-blue-color);
-}
-.habit__indicator--sales {
-  background-color: var(--light-blue-color);
-}

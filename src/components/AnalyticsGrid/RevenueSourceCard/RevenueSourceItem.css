@@ -11,10 +11,3 @@
 
   margin-right: 5px;
 }
-
-.revenue-source__indicator--new-customers {
-  background-color: var(--yellow-color);
-}
-.revenue-source__indicator--repeat-purchases {
-  background-color: var(--light-blue-color);
-}

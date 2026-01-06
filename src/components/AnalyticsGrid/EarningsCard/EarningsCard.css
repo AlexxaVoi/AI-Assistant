@@ -45,3 +45,12 @@
 .earning__graph {
   padding-top: 30px;
 }
+
+@media (max-width: 1024px) {
+  .earning__title {
+    font-size: 20px;
+  }
+  .earning__profit {
+    font-size: 30px;
+  }
+}
