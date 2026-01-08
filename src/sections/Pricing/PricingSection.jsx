@@ -1,6 +1,6 @@
 import Container from "../../layouts/Container/Container";
 import BillingToggle from "../../components/BillingToggle/BillingTiggle";
-import PricingCardsList from "../../components/PricingCardsList/PricingCardsList.jsx";
+import PricingCards from "../../components/PricingCards/PricingCards.jsx";
 
 import "./PricingSection.css";
 
@@ -65,7 +65,7 @@ const PricingSection = () => {
             <h3 className="">{PRICE_CONTENT.description}</h3>
           </div>
           <BillingToggle />
-          <PricingCardsList dataList={dataList} />
+          <PricingCards dataList={dataList} />
         </div>
       </Container>
     </section>

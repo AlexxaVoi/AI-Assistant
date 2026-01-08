@@ -1,6 +1,6 @@
 import CardPrice from "./CardPrice";
 
-import "./PricingCardsList.css";
+import "./PricingCards.css";
 
 const PricingCardsList = ({ dataList }) => {
   return (
