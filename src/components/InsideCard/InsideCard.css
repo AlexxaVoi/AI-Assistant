@@ -1,21 +1,8 @@
 .insight-card {
   position: absolute;
 }
+
 .insight-card:nth-child(1) {
-  transform: rotate(-8deg);
-  top: -235px;
-  left: -120px;
-  z-index: 3;
-}
-
-.insight-card:nth-child(2) {
-  transform: rotate(6.5deg);
-  top: -155px;
-  left: -45px;
-  z-index: 1;
-}
-
-/* .insight-card:nth-child(1) {
   transform: rotate(-8deg);
   top: -30vh;
   left: -8vw;
@@ -27,19 +14,12 @@
   top: -20vh;
   left: -4vw;
   z-index: 1;
-} 
+}
 
 .insight-card:nth-child(3) {
   transform: rotate(-9deg);
   top: -9vh;
   left: -5vw;
-  z-index: 2;
-}
-*/
-.insight-card:nth-child(3) {
-  transform: rotate(-9deg);
-  top: -75px;
-  left: -80px;
   z-index: 2;
 }
 
@@ -78,4 +58,10 @@
 .insight-card__description {
   font-size: 12px;
   color: var(--gray-text-color);
+}
+
+@media (max-width: 1024px) {
+  .insight-card {
+    display: none;
+  }
 }
