@@ -8,7 +8,7 @@ const SUPPORT_CONTENT = {
 
 const SupportSection = () => {
   return (
-    <section className="support-section">
+    <section className="support-section" id="support">
       <Container>
         <div className="support__container">
           <h2 className="support__title">{SUPPORT_CONTENT.title}</h2>

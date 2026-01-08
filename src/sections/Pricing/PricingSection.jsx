@@ -57,7 +57,7 @@ const PRICE_CONTENT = {
 
 const PricingSection = () => {
   return (
-    <section className="price-section">
+    <section className="price-section" id="price">
       <Container>
         <div className="price__container">
           <div className="price__text">

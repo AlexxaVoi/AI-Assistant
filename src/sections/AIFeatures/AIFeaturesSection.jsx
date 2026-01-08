@@ -11,7 +11,7 @@ const AIFEATURES__CONTENT = {
 
 const AIFeaturesSection = () => {
   return (
-    <section className="ai-feature-section">
+    <section className="ai-feature-section" id="feature">
       <Container>
         <div className="ai-feature__container">
           <div className="ai-feature__text">

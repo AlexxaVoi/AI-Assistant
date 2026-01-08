@@ -10,7 +10,7 @@ const ANALYTIC_CONTENT = {
 
 const AnalyticsSection = () => {
   return (
-    <section className="analytic-section">
+    <section className="analytic-section" id="analytic">
       <Container>
         <div className="analytic__container">
           <div className="analytic__text">
