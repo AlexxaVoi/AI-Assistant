@@ -5,22 +5,22 @@ const Navigation = () => {
     <nav className="header-nav">
       <ul className="header-list">
         <li className="header-item">
-          <a href="#" className="header-item-link">
+          <a href="#feature" className="header-item-link">
             Fitures
           </a>
         </li>
         <li className="header-item">
-          <a href="#" className="header-item-link">
+          <a href="#analytic" className="header-item-link">
             Benefits
           </a>
         </li>
         <li className="header-item">
-          <a href="#" className="header-item-link">
+          <a href="#price" className="header-item-link">
             Pricing
           </a>
         </li>
         <li className="header-item">
-          <a href="#" className="header-item-link">
+          <a href="#support" className="header-item-link">
             Contacts
           </a>
         </li>
