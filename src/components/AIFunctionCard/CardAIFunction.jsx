@@ -3,13 +3,13 @@ import "./CardAIFunction.css";
 const CardAIFunction = ({ icon, iconAlt, text, background }) => {
   return (
     <article
-      className="ai-function__card"
+      className="ai-function-card"
       style={{
         backgroundImage: `url(${background})`,
       }}
     >
-      <img className="card-icon" src={icon} alt={iconAlt} />
-      <p className="card-text">{text}</p>
+      <img className="ai-function-card__icon" src={icon} alt={iconAlt} />
+      <p className="ai-function-card__text">{text}</p>
     </article>
   );
 };

@@ -1,13 +1,10 @@
-/* .ai-feature-section {
-  padding: 40px 0;
-} */
-.ai-feature__container {
+.ai-features__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
 }
-.ai-feature__text {
+.ai-features__text {
   display: flex;
   flex-direction: column;
   gap: 25px;

@@ -1,4 +1,4 @@
-import CardAIFunction from "./CardAIFunction";
+import CardAIFunction from "./CardAIFunction.jsx";
 
 import iconReport from "../../assets/icons/icon-report.svg";
 import iconCalculation from "../../assets/icons/icon-calculation.svg";
@@ -12,7 +12,7 @@ import bgLineGraf from "../../assets/img/card-bg-line-graf.png";
 import bgColumbGraf from "../../assets/img/card-bg-columb-graf.png";
 import bgDiagram from "../../assets/img/card-bg-diagram.png";
 
-import "./AIFunctionCardList.css";
+import "./AIFunctionCard.css";
 
 const featureData = [
   {
@@ -50,9 +50,9 @@ const featureData = [
   },
 ];
 
-const AIFunctionCardList = () => {
+const AIFunctionCard = () => {
   return (
-    <div className="ai-function">
+    <div className="ai-functions">
       {featureData.map((item) => (
         <CardAIFunction
           key={item.iconAlt}
@@ -65,4 +65,4 @@ const AIFunctionCardList = () => {
     </div>
   );
 };
-export default AIFunctionCardList;
+export default AIFunctionCard;

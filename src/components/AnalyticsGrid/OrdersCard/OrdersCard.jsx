@@ -20,7 +20,7 @@ const OrdersCard = () => {
       <div className="order__data">
         <p className="order__title">{ORDER_CONTENT.title}</p>
 
-        <div className="order__values">
+        <div className="order__stats">
           <p className="order__amount">{ORDER_CONTENT.order}</p>
           <p className="order__description">{ORDER_CONTENT.description}</p>
         </div>

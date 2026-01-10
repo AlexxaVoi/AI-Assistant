@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
   padding: 200px 0;
 }
 
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.hero__container {
+.hero__content {
   display: flex;
   gap: 50px;
   justify-content: center;
@@ -19,14 +19,14 @@
   text-align: center;
   align-items: center;
 }
-.hero-title {
+.hero__title {
   background: linear-gradient(100deg, #ffffff, #aaaaaa, #000000);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.hero-description {
+.hero__description {
   max-width: 350px;
 }
 
@@ -37,17 +37,17 @@
 }
 
 @media (min-width: 481px) {
-  .hero-description {
+  .hero__description {
     max-width: 450px;
   }
 }
 @media (min-width: 1025px) {
-  .hero-description {
+  .hero__description {
     max-width: 600px;
   }
 }
 @media (min-width: 1440px) {
-  .hero-description {
+  .hero__description {
     max-width: 710px;
   }
 }

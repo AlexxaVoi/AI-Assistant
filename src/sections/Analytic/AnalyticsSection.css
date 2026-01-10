@@ -1,11 +1,11 @@
-.analytic__container {
+.analytics__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
 }
 
-.analytic__text {
+.analytics__text {
   display: flex;
   flex-direction: column;
   gap: 25px;

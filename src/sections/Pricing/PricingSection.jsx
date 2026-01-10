@@ -57,10 +57,10 @@ const PRICE_CONTENT = {
 
 const PricingSection = () => {
   return (
-    <section className="price-section" id="price">
+    <section className="pricing" id="price">
       <Container>
-        <div className="price__container">
-          <div className="price__text">
+        <div className="pricing__content">
+          <div className="pricing__text">
             <h2>{PRICE_CONTENT.title}</h2>
             <h3 className="">{PRICE_CONTENT.description}</h3>
           </div>

@@ -39,7 +39,7 @@
   font-family: var(--second-brand-text-style);
 }
 
-.order__values {
+.order__stats {
   display: flex;
   flex-direction: row;
   align-items: center;

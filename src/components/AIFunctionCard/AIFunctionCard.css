@@ -1,11 +1,7 @@
-.ai-function {
+.ai-functions {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 35px;
   width: 100%;
-}
-
-.ai-function > * {
-  flex: 1;
 }
