@@ -8,9 +8,9 @@ const SUPPORT_CONTENT = {
 
 const SupportSection = () => {
   return (
-    <section className="support-section" id="support">
+    <section className="support" id="support">
       <Container>
-        <div className="support__container">
+        <div className="support__inner">
           <h2 className="support__title">{SUPPORT_CONTENT.title}</h2>
           <div className="support__contact-form">
             <form action="#" method="POST" title="Форма для додадкових питань">

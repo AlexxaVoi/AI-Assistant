@@ -6,9 +6,9 @@ import Container from "../Container/Container";
 
 const Header = () => {
   return (
-    <header>
+    <header className="header">
       <Container>
-        <div className="header-container">
+        <div className="header__inner">
           <HeaderLogo />
           <Navigation />
           <Button text={"Start Free Trial"} variant={"header"} />

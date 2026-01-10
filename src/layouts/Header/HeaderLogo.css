@@ -1,17 +1,17 @@
-.header-logo {
+.header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
 
-.header-logo-text {
+.header__logo-text {
   font-weight: 600;
   font-size: clamp(20px, 3vw, 30px);
 }
 
 @media (max-width: 768px) {
-  .header-logo-text {
+  .header__logo-desc {
     display: none;
   }
 }

@@ -10,10 +10,10 @@ const ANALYTIC_CONTENT = {
 
 const AnalyticsSection = () => {
   return (
-    <section className="analytic-section" id="analytic">
+    <section className="analytics">
       <Container>
-        <div className="analytic__container">
-          <div className="analytic__text">
+        <div className="analytics__content">
+          <div className="analytics__text">
             <h2>{ANALYTIC_CONTENT.title}</h2>
             <h3>{ANALYTIC_CONTENT.description}</h3>
           </div>

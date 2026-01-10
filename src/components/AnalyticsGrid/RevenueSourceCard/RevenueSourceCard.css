@@ -8,20 +8,20 @@
   background-color: var(--dark-background-card);
 }
 
-.revenue-source__head {
+.revenue-source__header {
   display: flex;
   flex-direction: row;
   gap: 10px;
   justify-content: space-between;
 }
 
-.revenue-source__head-data {
+.revenue-source__info {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.revenue-source__head-title {
+.revenue-source__title {
   font-family: var(--second-brand-text-style);
   font-weight: 600;
   font-size: 26px;
@@ -40,7 +40,7 @@
 }
 
 @media (max-width: 1024px) {
-  .revenue-source__head-title {
+  .revenue-source__title {
     font-size: 22px;
   }
 }

@@ -39,12 +39,12 @@ const HERO_CONTENT = {
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section className="hero">
       <Container>
-        <div className="hero__container">
+        <div className="hero__content">
           <div className="hero__text">
-            <h1 className="hero-title">{HERO_CONTENT.title}</h1>
-            <h3 className="hero-description">{HERO_CONTENT.description}</h3>
+            <h1 className="hero__title">{HERO_CONTENT.title}</h1>
+            <h3 className="hero__description">{HERO_CONTENT.description}</h3>
           </div>
 
           <div className="hero__cards">

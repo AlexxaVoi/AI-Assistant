@@ -1,5 +1,5 @@
 import Container from "../../layouts/Container/Container";
-import AIFunctionCardList from "../../components/AIFunctionCardList/AIFunctionCardList";
+import AIFunctionCard from "../../components/AIFunctionCard/AIFunctionCard.jsx";
 
 import "./AIFeaturesSection.css";
 
@@ -11,16 +11,16 @@ const AIFEATURES__CONTENT = {
 
 const AIFeaturesSection = () => {
   return (
-    <section className="ai-feature-section" id="feature">
+    <section className="ai-features" id="feature">
       <Container>
-        <div className="ai-feature__container">
-          <div className="ai-feature__text">
-            <h2 className="ai-feature__title">{AIFEATURES__CONTENT.title}</h2>
-            <h3 className="ai-feature__description">
+        <div className="ai-features__container">
+          <div className="ai-features__text">
+            <h2 className="ai-features__title">{AIFEATURES__CONTENT.title}</h2>
+            <h3 className="ai-features__description">
               {AIFEATURES__CONTENT.description}
             </h3>
           </div>
-          <AIFunctionCardList />
+          <AIFunctionCard />
         </div>
       </Container>
     </section>
