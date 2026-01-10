@@ -1,5 +1,5 @@
 import Container from "../../layouts/Container/Container";
-import BillingToggle from "../../components/BillingToggle/BillingTiggle";
+import BillingToggle from "../../components/BillingToggle/BillingToggle.jsx";
 import PricingCards from "../../components/PricingCards/PricingCards.jsx";
 
 import "./PricingSection.css";
