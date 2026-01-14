@@ -1,11 +1,10 @@
 .header__logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
 
-.header__logo-text {
+.header__logo-desc {
   font-weight: 600;
   font-size: clamp(20px, 3vw, 30px);
 }
