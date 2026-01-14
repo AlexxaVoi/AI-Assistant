@@ -2,8 +2,13 @@ import "./ToggleOption.css";
 
 const ToggleOption = ({ period, discount, checked, onChange }) => {
   return (
-    <label className="toggle-option" onChange={onChange}>
-      <input type="radio" name="billing" checked={checked} />
+    <label className="toggle-option">
+      <input
+        type="radio"
+        name="billing"
+        checked={checked}
+        onChange={onChange}
+      />
 
       <span className="custom-radio" />
 

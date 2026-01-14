@@ -1,7 +1,7 @@
 import "./Header.css";
 import Button from "../../ui/Button/Button";
 import Navigation from "../../components/Navigation/Navigation";
-import HeaderLogo from "./HeaderLogo";
+import BrandLogo from "../BrandLogo/BrandLogo.jsx";
 import Container from "../Container/Container";
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
     <header className="header">
       <Container>
         <div className="header__inner">
-          <HeaderLogo />
+          <BrandLogo />
           <Navigation />
           <Button text={"Start Free Trial"} variant={"header"} />
         </div>

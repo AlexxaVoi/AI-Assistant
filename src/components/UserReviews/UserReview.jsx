@@ -1,4 +1,4 @@
-import HeaderLogo from "../../layouts/Header/HeaderLogo";
+import Logo from "../../layouts/BrandLogo/BrandLogo.jsx";
 import UserAnnotation from "./UserAnnotation.jsx";
 import "./UserReview.css";
 
@@ -15,7 +15,7 @@ const UserReview = () => {
   return (
     <article className="review">
       <nav className="review__nav">
-        <HeaderLogo />
+        <Logo />
       </nav>
       {USERREVIEWDATA.map((item) => (
         <UserAnnotation
