@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Container from "../../layouts/Container/Container";
 import BillingToggle from "../../components/BillingToggle/BillingToggle.jsx";
 import PricingCards from "../../components/PricingCards/PricingCards.jsx";
@@ -56,6 +58,8 @@ const PRICE_CONTENT = {
 };
 
 const PricingSection = () => {
+  const [check, setCheck] = useState(true);
+
   return (
     <section className="pricing" id="price">
       <Container>
@@ -64,8 +68,8 @@ const PricingSection = () => {
             <h2>{PRICE_CONTENT.title}</h2>
             <h3 className="">{PRICE_CONTENT.description}</h3>
           </div>
-          <BillingToggle />
-          <PricingCards dataList={dataList} />
+          <BillingToggle check={check} setCheck={setCheck} />
+          <PricingCards dataList={dataList} multiplier={check} />
         </div>
       </Container>
     </section>
