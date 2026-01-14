@@ -1,5 +1,6 @@
-import Container from "../../layouts/Container/Container";
-
+import Container from "../../layouts/Container/Container.jsx";
+import FeedbackForm from "../../components/FeedbackForm/FeedbackForm.jsx";
+import UserReview from "../../components/UserReviews/UserReview.jsx";
 import "./SupportSection.css";
 
 const SUPPORT_CONTENT = {
@@ -12,19 +13,10 @@ const SupportSection = () => {
       <Container>
         <div className="support__inner">
           <h2 className="support__title">{SUPPORT_CONTENT.title}</h2>
-          <div className="support__contact-form">
-            <form action="#" method="POST" title="Форма для додадкових питань">
-              <label htmlFor="username">Forever</label>
-              <input id="username" type="text" name="username" />
 
-              <label htmlFor="address">Email address</label>
-              <input id="address" type="email" name="address" />
-
-              <label htmlFor="question">Question</label>
-              <textarea id="question" name="question" />
-
-              <button type="submit">Send</button>
-            </form>
+          <div className="support__contact">
+            <FeedbackForm />
+            <UserReview />
           </div>
         </div>
       </Container>

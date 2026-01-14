@@ -1,0 +1,39 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 650px;
+}
+
+.feedback__field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback__label {
+  font-family: var(--second-brand-text-style);
+  font-size: 18px;
+}
+
+.feedback__input {
+  border: none;
+  border-radius: 15px;
+  background-color: #18181a;
+  padding: 16px 22px;
+
+  font-family: var(--second-brand-text-style);
+  font-size: 16px;
+  color: var(--light-text-color);
+}
+
+.feedback__input-textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.feedback__input:focus {
+  outline: none;
+  border: 2px solid var(--blue-color);
+}

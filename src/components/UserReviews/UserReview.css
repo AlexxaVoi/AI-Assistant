@@ -1,0 +1,19 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 42px;
+  gap: 10px;
+  max-width: 500px;
+  min-height: 400px;
+  height: 100%;
+
+  justify-content: space-between;
+
+  border-radius: 30px;
+  border: 1px solid rgba(157, 187, 255, 0.25);
+  background: radial-gradient(110% 90% at 50% -18%, #0b43ba6b, transparent 39%),
+    radial-gradient(85% 80% at 100% 100%, #0b43ba6b, transparent 40%);
+
+  box-shadow: 0 0 10px rgba(80, 130, 255, 0.15),
+    inset 0 0 20px rgba(255, 255, 255, 0.02);
+}
