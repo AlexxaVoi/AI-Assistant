@@ -10,7 +10,7 @@ const Navigation = () => {
           </a>
         </li>
         <li className="header-item">
-          <a href="#analytic" className="header-item-link">
+          <a href="#analytics" className="header-item-link">
             Benefits
           </a>
         </li>

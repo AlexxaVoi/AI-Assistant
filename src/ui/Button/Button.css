@@ -4,6 +4,15 @@
   font-weight: 500;
   box-sizing: border-box;
   line-height: 1;
+
+  transition: transform 0.4s ease;
+}
+.button:hover {
+  transform: scale(1.06);
+}
+
+.button:active {
+  transform: scale(0.95);
 }
 
 .button--header,

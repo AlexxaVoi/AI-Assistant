@@ -59,7 +59,15 @@ html {
   font-weight: 400;
   font-size: 16px;
   color: var(--light-text-color);
+  scroll-behavior: smooth;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   margin: 0;
 
